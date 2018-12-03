@@ -250,7 +250,7 @@ $(function(){
 				li_go.attr("id") == '001001003009' || li_go.attr("id") == '001001004013') {
 			location = li_go.find('.whole_left a').attr("href");
 		} else {
-			location='http://lab1.ruby.com:8081/course/operate-fwsk_login-001001001.html';
+			location='/lab1/index';
 		}
 	});
 	
@@ -427,7 +427,7 @@ function compareCurrentTrainingCode(trainingCode) {
 		var rightTrainingCode = $(this).parent().parent().attr("id");
 		//alert(rightTrainingCode);
 		if(typeof(rightTrainingCode) != "undefined" && rightTrainingCode == trainingCode){
-//			$(".content").text("所选择填写的报表，与当前实操助手不匹配！");
+//			$(".content").text("所选择填写的报表，与当前操作提示不匹配！");
 //			$(".keep").show();
 			flag=false;
 			return false;
@@ -544,7 +544,7 @@ function opengmfp() {
 	<!-- 右侧 start -->
 	<!-- 
     <div class="business">
-         <a><span>&gt;</span><p>实操助手</p></a>
+         <a><span>&gt;</span><p>操作提示</p></a>
     </div>
 	-->
     <!-- end 右侧 -->
@@ -553,7 +553,7 @@ function opengmfp() {
 	<!-- 右侧 start -->
 <script type="text/javascript" src="/assets/page.js"></script>
 <div class="business" style="position: absolute; margin: 0px;">
-      <p>实操助手</p><span class="lower"></span>
+      <p>操作提示</p><span class="lower"></span>
 </div>
 <!-- end 右侧 -->
 <!-- zhuai start -->
@@ -561,7 +561,7 @@ function opengmfp() {
 	 <div class="dong side" style="position: absolute; margin: 0px; z-index: 99999;">
 	       <!-- side_tit start -->
 	 	   <div class="side_tit">
-		 	   <h3>实操助手</h3>
+		 	   <h3>操作提示</h3>
 	     	   <span class="upper"></span>
 	 	   </div>
 	 	   <!-- end side_tit -->
@@ -692,10 +692,10 @@ function opengmfp() {
 
 <script type="text/javascript">
 $(function(){
-	  //外部(实操助手)--拖拽
+	  //外部(操作提示)--拖拽
 	jQuery(".business").Tdrag();
 
-	  //外部--实操助手
+	  //外部--操作提示
 	jQuery(".lower").click(function(){
 	  	  $(".side").show(300);
 	  	  $(".business").hide(300);
@@ -707,7 +707,7 @@ $(function(){
 		jQuery(".business").show();
 	  });
 
-	//内部(实操助手)--拖拽
+	//内部(操作提示)--拖拽
 	jQuery(".side").Tdrag({
 //	    scope:".zhuai",
 	    handle:".side_tit",

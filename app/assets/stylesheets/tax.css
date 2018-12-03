@@ -939,42 +939,42 @@ ul li {
 .win .nvabar ul li.d4 {
 	float: left;
 	padding-left: 20px;
-	background: url(../../images/fp/tax/search.png) no-repeat left;
+	background: url(/assets/search.png) no-repeat left;
 	background-size: 16px 16px;
 }
 
 .win .nvabar ul li.d5 {
 	float: right;
 	padding-left: 20px;
-	background: url(../../images/fp/tax/w2.png) no-repeat left;
+	background: url(/assets/w2.png) no-repeat left;
 	background-size: 16px 16px;
 }
 
 .win .nvabar ul li.d6 {
 	float: right;
 	padding-left: 20px;
-	background: url(../../images/fp/tax/w6.png) no-repeat left;
+	background: url(/assets/w6.png) no-repeat left;
 	background-size: 16px 16px;
 }
 
 .win .nvabar ul li.d7 {
 	float: right;
 	padding-left: 20px;
-	background: url(../../images/fp/tax/w4.png) no-repeat left;
+	background: url(/assets/w4.png) no-repeat left;
 	background-size: 16px 16px;
 }
 
 .win .nvabar ul li.d8 {
 	float: right;
 	padding-left: 20px;
-	background: url(../../images/fp/tax/w3.png) no-repeat left;
+	background: url(/assets/w3.png) no-repeat left;
 	background-size: 16px 16px;
 }
 
 .win .nvabar ul li.d9 {
 	float: right;
 	padding-left: 20px;
-	background: url(../../images/fp/tax/w5.png) no-repeat left;
+	background: url(/assets/w5.png) no-repeat left;
 	background-size: 16px 16px;
 }
  */

@@ -348,7 +348,7 @@
               var rightTrainingCode = $(this).parent().parent().attr("id");
               //alert(rightTrainingCode);
               if(typeof(rightTrainingCode) != "undefined" && rightTrainingCode == trainingCode){
-//			$(".content").text("所选择填写的报表，与当前实操助手不匹配！");
+//			$(".content").text("所选择填写的报表，与当前操作提示不匹配！");
 //			$(".keep").show();
                   flag=false;
                   return false;
@@ -470,7 +470,7 @@
                   }
                   var taxId = "420100200702220888";
                   if($(".modify_newpass").val() != taxId.substr(taxId.length-6,6)) {
-                      alertCommand("证书口令修改", "请按照实操助手要求进行口令设置。");
+                      alertCommand("证书口令修改", "请按照操作提示要求进行口令设置。");
                       return false;
                   }
                   if($(".modify_newpassconfirm").val() == "") {
@@ -533,7 +533,7 @@
               if($(".two_user").val() != "王云霞" ||
                   $(".two_pass1").val() != "123456" ||
                   $(".two_pass2").val() != "123456") {
-                  alertCommand("提示", "请按照实操助手要求进行填写。");
+                  alertCommand("提示", "请按照操作提示要求进行填写。");
                   $(".two_user").val("");
                   $(".two_pass1").val("");
                   $(".two_pass2").val("");
@@ -554,7 +554,7 @@
               if($(".three_address").val() == "" ||
                   $(".three_phone").val() == "" ||
                   $(".three_accounts").val() == "") {
-                  alertCommand("提示", "请按照实操助手要求进行填写。");
+                  alertCommand("提示", "请按照操作提示要求进行填写。");
                   $(".three_address").val("");
                   $(".three_phone").val("");
                   $(".three_accounts").val("");
@@ -1046,7 +1046,7 @@
     <!-- 右侧 start -->
     <script type="text/javascript" src="/assets/page.js"></script>
     <div class="business" style="position: absolute; margin: 0px;">
-      <p>实操助手</p><span class="lower"></span>
+      <p>操作提示</p><span class="lower"></span>
     </div>
     <!-- end 右侧 -->
     <!-- zhuai start -->
@@ -1054,7 +1054,7 @@
     <div class="dong side" style="position: absolute; margin: 0px; z-index: 99999;">
       <!-- side_tit start -->
       <div class="side_tit">
-        <h3>实操助手</h3>
+        <h3>操作提示</h3>
         <span class="upper"></span>
       </div>
       <!-- end side_tit -->
@@ -1180,10 +1180,10 @@
       <!-- end herex -->
       <script type="text/javascript">
           $(function(){
-              //外部(实操助手)--拖拽
+              //外部(操作提示)--拖拽
               jQuery(".business").Tdrag();
 
-              //外部--实操助手
+              //外部--操作提示
               jQuery(".lower").click(function(){
                   $(".side").show(300);
                   $(".business").hide(300);
@@ -1195,7 +1195,7 @@
                   jQuery(".business").show();
               });
 
-              //内部(实操助手)--拖拽
+              //内部(操作提示)--拖拽
               jQuery(".side").Tdrag({
 //	    scope:".zhuai",
                   handle:".side_tit",

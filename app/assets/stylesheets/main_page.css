@@ -10,7 +10,7 @@ ul,li {
 }
 /* 水印LOGO样式start */
 .watermark {
-	background-image: url(../images/common/logo_watermark2.png);
+	background-image: url(/assets/logo_watermark2.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: 95% 5%;
@@ -146,7 +146,7 @@ ul,li {
 	height:568px;
 }
 /* .drag {
-	background:url(../images/system_manager.jpg) 0 -361px no-repeat #0847ea;
+	background:url(/assets/system_manager.jpg) 0 -361px no-repeat #0847ea;
 	position:absolute;
 	width:449px;
 	height:286px;
@@ -255,20 +255,20 @@ ul,li {
 	background:#FFF;
 }
 .register_settings-2 {
-	background:url(../images/register_settings-2.jpg);
+	background:url(/assets/register_settings-2.jpg);
 	width:575px;
 	height:416px;
 	position:relative;
 }
 .register_settings-1 {
-	background:url(../images/register_settings-1.jpg);
+	background:url(/assets/register_settings-1.jpg);
 	width:575px;
 	height:416px;
 	display:none;
 	position:relative;
 }
 .register_settings-0 {
-	background:url(../images/register_settings-0.jpg);
+	background:url(/assets/register_settings-0.jpg);
 	width:575px;
 	height:416px;
 	display:none;
@@ -494,7 +494,7 @@ ul,li {
 	width:120px;
 }
 .main_page_file .icon1,.main_page_file .icon2,.main_page_file .icon3,.main_page_file .icon4,.main_page_file .icon5,.main_page_file .icon6,.main_page_file .icon7,.main_page_file .icon8 {
-	background:url(../images/menu_icon.png) no-repeat 5px center;
+	background:url(/assets/menu_icon.png) no-repeat 5px center;
 }
 .main_page_file .icon1 {
 	background-position:0 0

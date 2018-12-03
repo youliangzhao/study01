@@ -2303,7 +2303,7 @@ a{
 	z-index: 10;
 	overflow: hidden;
 	 display: none; 
-	background:url("../../images/fp/gmfp.png");
+	background:url("/assets/gmfp.png");
 }
 .cloxx{
     width: 20px;
