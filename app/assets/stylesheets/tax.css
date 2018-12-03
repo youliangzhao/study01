@@ -1,0 +1,1188 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+img{
+	border: 0;
+	display: block;
+}
+body{
+    font-family: "微软雅黑";
+}
+/*头部图标 start*/
+ .main_system_tax_rgb{
+ 	background-position: -105px -36px;
+ }
+ .ma_colorx{
+ 	color: #858a90;
+ }
+
+ .main_system_set_gray{
+ 	background-position: 0 0;
+ }
+ .main_system_btn_selected{
+ 	color: #000;
+ }
+/*end 头部图标*/
+
+
+
+.main_power{
+	position: relative;
+}
+.bs_none1{
+	width: 376px;
+	height: 168px;
+	background-color: #fff;
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -190px;
+	overflow: hidden;
+	display: none;
+}
+
+.bs_none1 p{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 7px;
+	right: 8px;
+	font-size: 20px;
+    color: #000;
+    line-height: 13px;
+    text-align: center;
+}
+.bs_none1 p:hover{
+	color: #fff;
+	cursor: pointer;
+}
+.bs_none1 span{
+	display: block;
+    width: 56px;
+    height: 26px;
+    background-color: #299dda;
+    position: absolute;
+    bottom: 13px;
+    right: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.bs_none2{
+	width: 376px;
+	height: 168px;
+	background-color: #fff;
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -190px;
+	overflow: hidden;
+	display: none;
+}
+.bs_none2 p{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 7px;
+	right: 8px;
+	font-size: 20px;
+    color: #000;
+    line-height: 13px;
+    text-align: center;
+}
+.bs_none2 p:hover{
+	color: #fff;
+	cursor: pointer;
+}
+.bs_none2 span{
+	display: block;
+    width: 56px;
+    height: 26px;
+    background-color: #299dda;
+    position: absolute;
+    bottom: 13px;
+    right: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bs_none3{
+	width: 376px;
+	height: 168px;
+	background-color: #fff;
+	z-index: 10;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -190px;
+	overflow: hidden;
+	display: none;
+}
+.bs_none3 p{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 7px;
+	right: 8px;
+	font-size: 20px;
+    color: #000;
+    line-height: 13px;
+    text-align: center;
+}
+.bs_none3 p:hover{
+	color: #fff;
+	cursor: pointer;
+}
+.bs_none3 span{
+	display: block;
+    width: 56px;
+    height: 26px;
+    background-color: #299dda;
+    position: absolute;
+    bottom: 11px;
+    right: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.bs_none4{
+	width: 680px;
+	height: 556px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -278px;
+	margin-left: -340px;
+	background-color: #fff;
+	z-index: 10;
+	overflow: hidden;
+	display: none;
+}
+.bs_none4 .bs_bg4{
+	position: relative;
+}
+.bs_none4 .category{
+	width: 510px;
+	height: 220px;
+	border: 2px solid #dfe7e9;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 80px;
+	right: 15px;
+}
+.bs_none4 .category .cat_con{
+	width: 300px;
+	/*height: 160px;*/
+	margin: 15px 0 0 30px;
+	overflow: hidden;
+}
+.bs_none4 .category .cat_con form{
+	padding: 15px 0 25px 0;
+}
+.bs_none4 .category .cat_con form h3{
+	float: left;
+	font-size: 16px;
+	line-height: 30px;
+	margin-right: 10px;
+}
+.bs_none4 .category .cat_con form select{
+	float: left;
+	width: 190px;
+	height: 30px;
+	font-size: 14px;
+	border: 1px solid #666;
+}
+.bs_none4 .submi{
+	width: 240px;
+	height: 35px;
+	position: absolute;
+	bottom: 24px;
+	right: 50%;
+	margin-right: -120px;
+	overflow: hidden;
+}
+.bs_none4 .submi span{
+	width: 100px;
+	height: 35px;
+	background-color: #07a8f8;
+	display: block;
+	border-radius: 4px;
+	line-height: 35px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+.bs_none4 .submi .cancel{
+	float: left;
+}
+.bs_none4 .submi .determine{
+	float: right;
+}
+
+.bs_none4 .closes{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.bs_none4 .closes .clos{
+	margin: 0 0 0 -16px;
+
+}
+
+.det_hid{
+	width: 920px;
+	background-color: #fff;
+	z-index: 12;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -460px;
+	overflow: hidden;
+	display: none;
+	border: 2px solid #9ab4d5;
+}
+
+.det_hid .closs{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.det_hid .closs img{
+	margin: 0 0 0 -16px;
+}
+
+.det_hid .shut{
+	width: 44px;
+	height: 16px;
+	position: absolute;
+	top: 40px;
+	right: 18px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.reports{
+    width: 920px;
+    height: 324px;
+    background-color: #fff;
+    position: absolute;
+    top: 145px;
+    left: 0;
+}
+.reports .scr_cont table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #dfdfdf;
+}
+.reports .scr_cont table thead{
+    background-color: #1487c6;
+    color: #fff;
+}
+.reports .scr_cont table thead th{
+    width: 14.1%;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+.reports .scr_cont table .ta_left{
+    width: 1%;
+    background-color: #1487c6;
+}
+.reports .scr_cont table tbody tr td{
+    width: 14.1%;
+    height: 25px;
+    text-align: left;
+    padding-left: 5px;
+}
+.reports .scr_cont table tbody tr:hover{
+    background-color: #7d95b9;
+    cursor: pointer;
+}
+
+.bs_none5{
+	width: 620px;
+	height: 402px;
+	background-color: #fff;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -215px;
+    margin-left: -305px;
+    z-index: 20;
+    display: none;
+}
+.bs_none5 .bs_btn{
+	width: 240px;
+    height: 35px;
+    position: absolute;
+    bottom: 16px;
+    right: 50%;
+    margin-right: -120px;
+    overflow: hidden;
+}
+.bs_none5 .bs_btn span{
+	width: 100px;
+    height: 35px;
+    background-color: #07a8f8;
+    display: block;
+    border-radius: 4px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.bs_none5 .bs_btn .away{
+	float: left;
+}
+.bs_none5 .bs_btn .sure{
+	float: right;
+}
+
+.bs_none5 .closed{
+	width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.bs_none5 .closed img{
+	margin: 0 0 0 -16px;
+}
+
+.rubric{
+	width: 415px;
+	height: 282px;
+	background-color: #fff;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -135px;
+    margin-left: -205px;
+    display: none;
+    z-index: 20;
+}
+.rubric .rub_btn{
+	width: 240px;
+    height: 35px;
+    position: absolute;
+    bottom: 24px;
+    right: 50%;
+    margin-right: -124px;
+    overflow: hidden;
+}
+.rubric .rub_btn span{
+	width: 100px;
+    height: 35px;
+    background-color: #07a8f8;
+    display: block;
+    border-radius: 4px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.rubric .rub_btn span.rub_btn_ok{
+	float: left;
+}
+.rubric .rub_btn span.rub_btn_no{
+	float: right;
+}
+.rubric .rub_close{
+	width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.rubric .rub_close img{
+	margin: 0 0 0 -16px;
+}
+.details{
+	width: 527px;
+	height: 524px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -262px;
+    margin-left: -260px;
+    background-color: #fff;
+    z-index: 21;
+    display: none;
+}
+.details .det_close{
+	width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.details .det_close img{
+	margin: 0 0 0 -16px;
+}
+.details span{
+	width: 100px;
+    height: 35px;
+    background-color: #07a8f8;
+    display: block;
+    border-radius: 4px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.bs_none6{
+	width: 476px;
+	height: 293px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -152px;
+	margin-left: -232px;
+	z-index: 10;
+	overflow: hidden;
+	display: none;
+}
+.bs_none6 .bs_no_clos{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.bs_none6 .bs_no_clos img{
+	margin: 0 0 0 -16px;
+}
+.bs_none6 .bs_no_btn{
+	width: 240px;
+    height: 35px;
+    position: absolute;
+    bottom: 11px;
+    right: 50%;
+    margin-right: -124px;
+    overflow: hidden;
+}
+.bs_none6 .bs_no_btn span{
+	width: 100px;
+    height: 35px;
+    background-color: #07a8f8;
+    display: block;
+    border-radius: 4px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.bs_none6 .bs_no_btn .aways{
+	float: left;
+}
+.bs_none6 .bs_no_btn .confirmx{
+	float: right;
+}
+.Outgoing{
+	width: 603px;
+	height: 431px;
+	background-color: #fff;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -222px;
+    margin-left: -300px;
+    z-index: 10;
+    display: none;
+}
+.Outgoing .choice{
+    width: 425px;
+    height: 150px;
+    background-color: #fff;
+    border: 2px solid #dfe7e9;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 70px;
+    right: 15px;
+}
+.Outgoing .choice .cho_con{
+	width: 380px;
+    margin: 3px 0 0 30px;
+    overflow: hidden;
+}
+.Outgoing .choice .cho_con form{
+	padding: 15px 0 25px 0;
+}
+.Outgoing .choice .cho_con form h3{
+	float: left;
+    font-size: 16px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.Outgoing .choice .cho_con form select{
+	float: left;
+    width: 190px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #666;
+}
+.Outgoing .cho_img{
+    display: block;
+	float: left;
+}
+.Outgoing .zlbtn{
+	width: 240px;
+    height: 35px;
+    position: absolute;
+    bottom: 17px;
+    right: 160px;
+    overflow: hidden;
+}
+.Outgoing .zlbtn span{
+	width: 100px;
+    height: 35px;
+    background-color: #07a8f8;
+    display: block;
+    border-radius: 4px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.Outgoing .zlbtn .zl_close{
+	float: left;
+}
+.Outgoing .zlbtn .zl_yes{
+	float: right;
+}
+
+.Outgoing .out_close{
+	width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Outgoing .out_close img{
+	margin: 0 0 0 -16px;
+}
+
+.successx{
+	width: 325px;
+	height: 166px;
+	background-color: #fff;
+	z-index: 10;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -117px;
+    margin-left: -157px;
+    overflow: hidden;
+    display: none;
+}
+.successx p{
+	width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    font-size: 20px;
+    color: #000;
+    line-height: 13px;
+    text-align: center;
+    cursor: pointer;
+}
+.successx p:hover{
+	color: #fff;
+}
+.successx span{
+	display: block;
+    width: 56px;
+    height: 26px;
+    background-color: #299dda;
+    position: absolute;
+    bottom: 11px;
+    right: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.years{
+	width: 591px;
+	height: 488px;
+	background-color: #fff;
+	position: absolute;
+	top: 40px;
+	left: 190px;
+	overflow: hidden;
+	z-index: 10;
+	display: none;
+}
+.years .yea_categ{
+    width: 430px;
+    height: 170px;
+    border: 2px solid #dfe7e9;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 85px;
+    right: 15px;
+}
+.years .yea_categ .ye_cat_con{
+    width: 300px;
+    margin: 15px 0 0 30px;
+    overflow: hidden;
+}
+.years .yea_categ .ye_cat_con form{
+	padding: 15px 0 25px 0;
+}
+.years .yea_categ .ye_cat_con form h3{
+	float: left;
+    font-size: 16px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.years .yea_categ .ye_cat_con form select{
+	float: left;
+    width: 190px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #666;
+}
+.years .yea_btn{
+	width: 240px;
+    height: 35px;
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    margin-right: -131px;
+    overflow: hidden;
+}
+.years .yea_btn span{
+	width: 100px;
+    height: 35px;
+    background-color: #07a8f8;
+    display: block;
+    border-radius: 4px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.years .yea_btn .ye_cancel{
+    float: left;
+}
+.years .yea_btn .ye_determine{
+    float: right;
+}
+.years .yea_closes{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.years .yea_closes img{
+	margin: 0 0 0 -16px;
+}
+/* 金税设备状态查询start */
+.wrap {
+	width: 640px;
+	height: 500px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	border: 1px solid #e3e1e4;
+}
+
+.wrap .tabs {
+	width: 140px;
+	height: 500px;
+	background-color: #efefed;
+	float: left;
+}
+
+.wrap .tabs .tab {
+	height: 60px;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.wrap .tabs .tab span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.wrap .tabs .tab.active {
+	background-color: #ffffff;
+	color: blue;
+}
+
+.wrap .infobox {
+	width: 500px;
+	height: 400px;
+	background-color: #ffffff;
+	float: right;
+}
+
+.wrap .infobox .active {
+	display: none;
+}
+
+.wrap .infobox .b2 {
+	position: relative;
+}
+
+.wrap .infobox .b2 span {
+	position: absolute;
+	padding: 0 3px;
+	top: -6px;
+	left: 23%;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: 700;
+	background-color: #ffffff;
+}
+
+.wrap table {
+	margin-top: 60px;
+}
+
+.wrap table td {
+	font-size: 12px;
+	height: 25px;
+	padding-right: 10px;
+}
+/* 金税设备状态查询end */
+/* 弹出大框样式start */
+.Issue{
+    width: 644px;
+    height: 532px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 168px;
+    z-index: 20;
+    border: 3px solid #a6bddc;
+    display: none;
+}
+.Issue .Issue_tit{
+    height: 30px;
+    background-color: #a6bddc;
+}
+.Issue .Issue_tit img{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.Issue .Issue_tit span{
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
+.Issue .Issue_close{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    overflow: hidden;
+}
+.Issue .Issue_close img{
+    margin: 0 0 0 -16px;
+    cursor: pointer;
+}
+/* 弹出大框样式end */
+/* 增值税专用发票汇总表窗口start */
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+.fpzh {
+	position: absolute;
+	top: 4px;
+	width: 985px;
+	margin: 0 auto;
+	display: none;
+	z-index: 10;
+}
+
+.win .nvabar {
+	width: 100%;
+}
+
+.win .nvabar  ul {
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.win .nvabar ul:after {
+	content: "";
+	display: block;
+	clear: both;
+	zoom: 1;
+}
+
+.win .nvabar ul li {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	margin-right: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.win .nvabar ul li a {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	margin-right: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333333;
+}
+/*
+.win .nvabar ul li a:hover {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #16219A;
+}*/
+
+.win .nvabar ul li.d1 {
+	float: left;
+}
+
+.win .nvabar ul li.d1 select {
+	margin-left: 10px;
+	background-color: #f2f7fc;
+}
+
+.win .nvabar ul li.d2 {
+	float: left;
+}
+
+.win .nvabar ul li.d2 select {
+	margin-left: 10px;
+	background-color: #f2f7fc;
+}
+
+.win .nvabar ul li.d3 {
+	float: left;
+}
+
+.win .nvabar ul li.d3 select {
+	margin-left: 10px;
+	background-color: #f2f7fc;
+}
+/* 
+.win .nvabar ul li.d4 {
+	float: left;
+	padding-left: 20px;
+	background: url(../../images/fp/tax/search.png) no-repeat left;
+	background-size: 16px 16px;
+}
+
+.win .nvabar ul li.d5 {
+	float: right;
+	padding-left: 20px;
+	background: url(../../images/fp/tax/w2.png) no-repeat left;
+	background-size: 16px 16px;
+}
+
+.win .nvabar ul li.d6 {
+	float: right;
+	padding-left: 20px;
+	background: url(../../images/fp/tax/w6.png) no-repeat left;
+	background-size: 16px 16px;
+}
+
+.win .nvabar ul li.d7 {
+	float: right;
+	padding-left: 20px;
+	background: url(../../images/fp/tax/w4.png) no-repeat left;
+	background-size: 16px 16px;
+}
+
+.win .nvabar ul li.d8 {
+	float: right;
+	padding-left: 20px;
+	background: url(../../images/fp/tax/w3.png) no-repeat left;
+	background-size: 16px 16px;
+}
+
+.win .nvabar ul li.d9 {
+	float: right;
+	padding-left: 20px;
+	background: url(../../images/fp/tax/w5.png) no-repeat left;
+	background-size: 16px 16px;
+}
+ */
+.win .winbox {
+	
+}
+
+.win .winbox ul.wbbar {
+	width: 100%;
+}
+
+.win .winbox ul.wbbar:after {
+	content: "";
+	display: block;
+	clear: both;
+	zoom: 1;
+}
+
+.win .winbox ul.wbbar li {
+	height: 20px;
+	line-height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	border: 1px solid #929292;
+	float: left;
+	padding: 0 15px;
+	cursor: pointer;
+}
+
+.win .winbox ul.wbbar li.active {
+	border-bottom: none;
+}
+
+.win .winbox .tab.active {
+	display: block;
+}
+
+.win .winbox .tab {
+	display: none;
+	border: 1px solid #999999;
+	background-color: #f0f0f0;
+}
+
+.win .winbox .tab ul {
+	width: 600px;
+	margin: 15px 0;
+	margin-left: 15px;
+}
+
+.win .winbox .tab ul:after {
+	content: "";
+	display: block;
+	clear: both;
+	zoom: 1;
+}
+
+.win .winbox .tab ul li {
+	width: 150px;
+	font-size: 12px;
+	color: #3e39a2;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+.win .winbox .tab ul li span {
+	float: right;
+	color: #826767;
+	font-weight: 700;
+}
+
+.win .winbox .tab .ssdate {
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	background-color: #1687c9;
+	border: 1px solid #999999;
+	box-sizing: border-box;
+}
+
+.win .winbox .tab table {
+	width: 100%;
+	background: #f2f9ff;
+}
+
+.win .winbox .tab tr th {
+	height: 30px;
+	line-height: 30px;
+	background-color: #7e96ba;
+	border-right: 1px solid #999999;
+	color: #ffffff;
+}
+
+.win .winbox .tab tr td {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-right: 1px solid #999999;
+	cursor: pointer;
+	box-sizing: border-box;
+	background: #f2f9ff;
+}
+
+.win .winbox .tab tr td input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+	float: left;
+}
+
+.win .winbox .tab tr:nth-child(even) td {
+	background-color: #f2f9ff;
+}
+
+.win .winbox .tab tr:nth-child(even) td input {
+	background-color: #f2f9ff;
+}
+
+.win .winbox .tab tr:nth-child(odd) td {
+	background-color: #e5e6e8;
+}
+
+.win .winbox .tab tr:nth-child(odd) td input {
+	background-color: #e5e6e8;
+}
+
+.win .winbox .tab tr:hover td {
+	background-color: #7e96ba;
+}
+
+.win .winbox .tab tr:hover td input {
+	background-color: #7e96ba;
+}
+.nav_r {
+	height: 24px;
+	position: absolute;
+	top: 0;
+	right: 5px;
+	overflow:;
+	hidden
+}
+
+.nav_r dl {
+	float: left;
+	margin: 5px 0 0 12px;
+	cursor: pointer;
+}
+
+.nav_r dl dt {
+	float: left;
+	margin-right: 2px;
+}
+
+.nav_r dl dd {
+	float: left;
+	font-weight: bold;
+}
+/* 增值税专用发票汇总表窗口end */
+/* 增值税专用发票汇总打印预览start */
+.tax_print {
+	top: -109px;
+	left: -4px;
+	width: 985px;
+	height: 710px;
+	margin: 0 auto;
+	z-index: 100;
+	/* display: block; */
+}
+.hz-part1, .hz-part2, .hz-part3 {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.hz-part1 h5 {
+	text-align: center;
+	font-size: 16px;
+}
+
+.hz-part3 table {
+	width: 100%;
+}
+
+.hz-part3 table td {
+	border: 1px solid #000;
+	text-align: center;
+	height: 30px;
+}
+
+.hz-part3 table th {
+	border: 1px solid #000;
+	background-color: #d1d0ce;
+	height: 30px;
+}
+
+.hz-part3 table td input {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	outline: none;
+	border: none;
+}
+/* 增值税专用发票汇总打印预览end */

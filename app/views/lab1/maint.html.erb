@@ -1,2 +1,726 @@
-<h1>Lab1#maint</h1>
-<p>Find me in app/views/lab1/maint.html.erb</p>
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://lab1.ruby.com:8081/course/operate-maintenance-001001001.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="/assets/default.css" rel="stylesheet" id="lhgdialoglink">
+<!--<base href="http://lab1.ruby.com:8081/">--><base href=".">
+
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="proma" content="no-cache">
+<meta http-equiv="cache-control" content="no cache">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" type="text/css" href="/assets/SimpleTree.css">
+<link rel="stylesheet" type="text/css" href="/assets/main_page.css">
+<link rel="stylesheet" type="text/css" href="/assets/operate.css">
+<link rel="stylesheet" type="text/css" href="/assets/maintenance.css">
+<script type="text/javascript" src="/assets/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="/assets/jquery.validate.js"></script>
+<script type="text/javascript" src="/assets/formutil.js"></script>
+<script type="text/javascript" src="/assets/function.js"></script>
+<script type="text/javascript" src="/assets/WdatePicker.js"></script><link href="/assets/WdatePicker.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/assets/opacity.js"></script>
+<script type="text/javascript" src="/assets/SimpleTree.js"></script>
+<link rel="stylesheet" href="/assets/iblue.css">
+<link rel="stylesheet" type="text/css" href="/assets/Draging.css">
+<script type="text/javascript" src="/assets/lhgdialog.min.js"></script>
+<script type="text/javascript" src="/assets/lhgdialog-notice.js"></script>
+<script type="text/javascript" src="/assets/Tdrag.js"></script>
+<!--浏览器兼容提示框start-->
+<style>
+.opacity{
+	display:none;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    position: absolute;
+    z-index: 99999999998;
+    opacity: 0.1;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto;
+    background-color: rgb(0, 0, 0);
+}
+#norightbro {
+	display:none;
+	width: 830px;
+	margin-left: -415px;
+    position: absolute;
+    z-index: 99999999999;
+    background-color: #fff;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    border: 2px solid #2E5473;
+}
+#norightbro .mod_tit span {
+    display: block;
+    margin: 3px 0 0 7px;
+}
+
+#norightbro .mod_tit {
+    width: 831px;
+    height: 24px;
+    background-color: #2E5473;
+    color: #fff;
+    overflow: hidden;
+    margin-left: -1px;
+}
+#norightbro .mod_con {
+    width: 80%;
+    margin: 17px auto;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+#norightbro .mod_fo {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+#norightbro .mod_con p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#norightbro .mod_fo .mod_fo_con .mod_confirm {
+    float: right;
+	margin-right:20px;
+}
+#norightbro .mod_fo .mod_fo_con button {
+    display: block;
+    width: 60px;
+    height: 25px;
+    color: #fff;
+    background-color: #2E5473;
+    outline: none;
+    border: 0;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 25px;
+    cursor: pointer;
+}
+</style>
+</head><body><div class="" style="left: 0px; top: 0px; visibility: hidden; position: absolute;"><table class="ui_border"><tbody><tr><td class="ui_lt"></td><td class="ui_t"></td><td class="ui_rt"></td></tr><tr><td class="ui_l"></td><td class="ui_c"><div class="ui_inner"><table class="ui_dialog"><tbody><tr><td colspan="2"><div class="ui_title_bar"><div class="ui_title" unselectable="on" style="cursor: move;"></div><div class="ui_title_buttons"><a class="ui_min" href="javascript:void(0);" title="最小化" style="display: inline-block;"><b class="ui_min_b"></b></a><a class="ui_max" href="javascript:void(0);" title="最大化" style="display: inline-block;"><b class="ui_max_b"></b></a><a class="ui_res" href="javascript:void(0);" title="还原"><b class="ui_res_b"></b><b class="ui_res_t"></b></a><a class="ui_close" href="javascript:void(0);" title="关闭(esc键)" style="display: inline-block;">×</a></div></div></td></tr><tr><td class="ui_icon" style="display: none;"></td><td class="ui_main" style="width: auto; height: auto;"><div class="ui_content" style="padding: 10px;"></div></td></tr><tr><td colspan="2"><div class="ui_buttons" style="display: none;"></div></td></tr></tbody></table></div></td><td class="ui_r"></td></tr><tr><td class="ui_lb"></td><td class="ui_b"></td><td class="ui_rb" style="cursor: se-resize;"></td></tr></tbody></table></div><div class="opacity">
+</div>
+<!-- 用户使用浏览器不正确 start -->
+<div id="norightbro">
+	 <div class="mod_tit">
+	     <span>温馨提示</span>
+	 </div>
+
+	 <div class="mod_con" style="color:red">
+		<p>税务操作实验室系统，仅支持谷歌或火狐浏览器，如果做题过程中出现问题，请换成火狐或者谷歌浏览器！</p>
+	 </div>
+	 <div class="mod_fo">
+	      <div class="mod_fo_con">
+	          <button type="button" class="mod_confirm" id="norightbrosure">确定</button>
+	      </div>
+	 </div>
+</div>
+<script type="text/javascript">
+;$(function(){
+	$("#norightbrosure").bind("click",function(){//浏览器兼容温馨提示确定按钮
+		hideBro();
+	});
+	bro();
+});
+function bro(){ 
+    var broName = ''; 
+	var is360 = _mime("type", "application/vnd.chromium.remoting-viewer");//application/vnd.chromium.remoting-viewer可能为360特有
+    if (isChrome() && is360) { 
+	   broName="360浏览器";
+    }else{
+		 if(window.navigator.userAgent.indexOf('MSIE')!=-1&&window.navigator.appName.indexOf("Microsoft") != -1){ 
+			broName = 'IE';  
+		}  
+		if(window.navigator.userAgent.indexOf('Firefox')!=-1){  
+			broName = 'Firefox';  
+		}  
+		if(window.navigator.userAgent.indexOf('Chrome')!=-1){ 
+			broName = 'Chrome';  
+		}
+	}
+	if(broName!="Chrome" && broName!="Firefox"){
+		$(".opacity").show();
+		$("#norightbro").show();
+	}  
+}   
+function hideBro(){
+	$("#norightbro").hide();
+	$(".opacity").hide();
+}
+ //检测是否是谷歌内核(可排除360及谷歌以外的浏览器)
+ function isChrome(){
+	 var ua = navigator.userAgent.toLowerCase();
+	 return ua.indexOf("chrome") > 1;
+ }
+ //测试mime
+ function _mime(option, value) {
+	 var mimeTypes = navigator.mimeTypes;
+	 for (var mt in mimeTypes) {
+		 if (mimeTypes[mt][option] == value) {
+			 return true;
+		 }
+	 }
+	 return false;
+ }
+ </script><!--浏览器兼容提示框end-->
+<!--挤掉账号的websocket start-->
+<script type="text/javascript">
+var userName = "2850653086";
+var websocket=null;
+$(function () {
+    if (userName != null && userName != '') {
+        webSocketMsg();
+    }
+});
+//获取WebSocket推送的数据
+function webSocketMsg() {
+	// 判断当前浏览器是否支持WebSocket
+	if ('WebSocket' in window) {
+		websocket = new WebSocket("ws://" + window.location.host + "/hostWebSocket?"+userName );
+	} else {
+		alert('当前浏览器 Not support websocket');
+	}
+	// 连接发生错误的回调方法
+	websocket.onerror = function() {
+		console.log("WebSocket连接发生错误");
+	};
+	// 连接成功建立的回调方法
+	websocket.onopen = function() {
+		console.log("WebSocket连接成功");
+	}
+	// 接收到消息的回调方法
+	websocket.onmessage = function(event) {
+		 var objTemp = JSON.parse(event.data);
+	     var result = objTemp.success;
+	     var msg = objTemp.code;
+	     var content = objTemp.msg;
+	     if (result && "KickOut" == msg) {
+	    	 alert(content);
+	    	 top.location = "http://" + window.location.host + "/logout.html";
+	     }
+//	     if (result && "online" == msg) {
+//	    	 if($("#online")){
+//	    		 $("#online").text("已学习课程人数："+content+"人");
+//	    	 }
+//	     }
+	}
+	// 连接关闭的回调方法
+	websocket.onclose = function() {
+		console.log("WebSocket连接关闭");
+	}
+	// 监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+	window.onbeforeunload = function() {
+		closeWebSocket();
+	}
+}
+// 关闭WebSocket连接
+function closeWebSocket() {
+	websocket.close();
+}
+// 发送消息
+function send() {
+	var message = document.getElementById('text').value;
+	websocket.send(message);
+}</script>
+<!--挤掉账号的websocket end--><script type="text/javascript" src="/assets/bgbill.js"></script>
+<script type="text/javascript" src="/assets/pagination.js"></script>
+<script>
+$(function(){
+	//页面跳转
+	$('div.main_power_btn').find('dt').click(function(){
+		if($(this).attr('id') != "set"){
+			location='/lab1/'+$(this).attr('id');
+		}
+	});
+	//退出
+	$('.operate_close').click(function() {
+		//获取正在进行中的li
+		var li_go = $('.whole .whole_right .whole_r_go').parent().parent();
+		if(li_go.attr("id") == '001001001005' || li_go.attr("id") == '001001002005' || 
+				li_go.attr("id") == '001001003009' || li_go.attr("id") == '001001004013') {
+			location = li_go.find('.whole_left a').attr("href");
+		} else {
+			location='http://lab1.ruby.com:8081/course/operate-fwsk_login-001001001.html';
+		}
+	});
+	
+	$(".zclassify").mouseleave(function(){
+		$(".zclassify").hide();
+	});
+	var khTreeFlag = true;
+	$(".st_tree").SimpleTree({
+	
+		/* 可无视代码部分*/
+		click:function(a){
+			
+//			if(!$(a).attr("hasChild")) {
+//				alert($(a).attr("ref"));
+//			}
+			if($(a).attr('ref') == "khbm") {
+				loadCustomers(null,$('#menuTrainingCode').val());
+//				$(".zclassify").show();
+//				if(khTreeFlag) 
+//					khTreeFlag = false;
+//				else
+//					khTreeFlag = true;
+			} else if($(a).attr('ref') == "spbm") {
+				loadProducts(null,$('#menuTrainingCode').val());
+//			} else {
+//				$(".zclassify").hide();
+//			}
+//			if(khTreeFlag) {
+//				$(".zclassify").hide();
+			}
+		}
+		
+	});
+	
+		
+});
+
+/**
+ * 选中上级编码在其中的a标签中添加样式，用于修改该编码
+ */
+function chooseFatherCode(fatherCode, trainingCode, obj) {
+	loadCustomers(fatherCode, trainingCode, null);
+	$(".st_tree ul li a").removeClass('st_tree_choose').css({"color":"#000"});
+	$(obj).addClass('st_tree_choose');
+	$(obj).css({"color":"#fff"});
+	if($(obj).attr('ref') != "khbm") {
+		$(".zchange").removeClass('active');
+	} else {
+		$(".zchange").addClass('active');
+	}
+//	$('.reports .re_scroll #customerTable').find("input[id='code']").each(function() {
+//		if($(this).val() == $(obj).attr('ref')) {
+//			$(this).parent().parent().addClass('selected');
+//		}
+//	});
+}
+$(function(){
+	jQuery.ajax({
+		url:'http://lab1.ruby.com:8081/course/list-001001001.html',
+		success:function(data){
+			$(".side").append(data);
+			//判断如果“未开始”项存不存在，存在则点击第一个“未开始”项，不存在则点击“进行中”项
+			if($(".side .side_box .whole li .whole_r_no:first").length == 1) {
+				$(".side .side_box .whole li .whole_r_no:first").click();
+			} else {
+				$(".side .side_box .whole li .whole_r_go").click();
+			}
+		}
+	});
+	$(".side").on("click",".side_box .whole li",function(){
+		if($(this).attr("id")){
+			if($(this).prev().find(".whole_right a").text() == "已结束" ||
+					$(this).prev().find(".whole_right a").text() == "")
+				loadRight($(this).attr("id"));
+			else {
+				alert("请按照业务顺序进行操作。");
+				return false;
+			}
+		}
+	});
+});
+
+function loadRight(code){
+	if(typeof(code) == "undefined") {
+		code = $(".side .side_box .whole li .whole_r_color:last").parent().parent().attr("id");
+	}
+	jQuery.ajax({
+		url:'http://lab1.ruby.com:8081/course/questionlist-'+code+'.html',
+		success:function(data){
+			$(".side").html(data);
+		}
+	});
+}
+
+function subNormalQuestion(questionId){
+	//说明不是全国防伪税控购买发票这一题，可以点击确认按钮
+	if($('.gmfp_buttom').length == 0) {
+		jQuery.ajax({
+			url:'http://lab1.ruby.com:8081/course/subnormalquestion-'+questionId+'.json',
+			success:function(data){
+				alert(data.msg);
+				loadRight($(".whole_r_go").parent().parent().next().attr("id"));
+			}
+		});
+	} else {
+		alert("请购买发票。");
+	}
+}
+
+/**
+ * 提交题目
+ * @param questionId
+ */
+function submitQuestion(questionId){
+	jQuery.ajax({
+		url:'http://lab1.ruby.com:8081/course/subnormalquestion-'+questionId+'.json',
+		success:function(data){
+			loadRight($(".whole_r_go").parent().parent().next().attr("id"));
+		}
+	});
+}
+
+/**
+ * 提交题目
+ * @param questionId
+ */
+function submitQuestionAndUrl(questionId, url){
+	jQuery.ajax({
+		url:'http://lab1.ruby.com:8081/course/subnormalquestion-'+questionId+'.json',
+		success:function(data){
+			loadRight($(".whole_r_go").parent().parent().next().attr("id"));
+			if(url != null) {
+				location = url;
+			}
+		}
+	});
+}
+/**
+ * 查看当前进行中的业务是否为指定的业务名，如果是则将该题提交答案
+ * @param trainingName 业务名称
+ * @param url 转向地址
+ */
+function checkCurrentIsNeedSubmitAndTurnURL(trainingName, url){
+	//获取正在进行中的li，如果为trainingName则将这道题变为已答状态
+	var li_go = $('.whole .whole_right .whole_r_go').parent().parent();
+	var span = li_go.find('span').attr("title");
+	if(typeof(span) == "undefined") {
+		span = $('.whole .whole_left').find('a').attr("title")
+	}
+	if(span == trainingName) {
+		jQuery.ajax({
+			url:'http://lab1.ruby.com:8081/course/subnormalquestion-'+$('#questionId').val()+'.json',
+			success:function(data){
+				loadRight($(".whole_r_go").parent().parent().next().attr("id"));
+				if(url != null) {
+					location = url;
+				}
+			}
+		});
+	} else {
+		if(url != null) {
+			location = url;
+		}
+	}
+}
+/**
+ * 验证所填表单是否跟当前业务匹配，如果不匹配给予提示，其中弹出的公共窗口在最外层公用share的vm页面中
+ * @param trainingCode 点击表单所属的业务，精确到12位，例：001003001002
+ * @returns {Boolean}
+ */
+function compareCurrentTrainingCode(trainingCode) {
+	var flag=true;
+	$('.whole .whole_right .whole_r_no', top.window.document).each(function(){
+		var rightTrainingCode = $(this).parent().parent().attr("id");
+		//alert(rightTrainingCode);
+		if(typeof(rightTrainingCode) != "undefined" && rightTrainingCode == trainingCode){
+//			$(".content").text("所选择填写的报表，与当前实操助手不匹配！");
+//			$(".keep").show();
+			flag=false;
+			return false;
+		}
+	})
+	if(!flag){
+		return false;
+	}
+	return true;
+}
+
+function showVideo(){
+	var dialog = jQuery.dialog({
+		title: '操作视频',
+		content: '<video width="320" height="240" controls="controls"><source src="http://www.w3school.com.cn/i/movie.ogg" type="video/ogg"><source src="http://www.w3school.com.cn/i/movie.mp4" type="video/mp4">你的浏览器不支持video标签</video>'
+    });
+}</script>
+<script type="text/javascript" src="/assets/maintenance.js"></script>
+<title>报税处理</title>
+
+
+	<!-- 根据此可区分是在哪个父级菜单做的题目 -->
+	<input type="hidden" id="menuTrainingCode" value="001001001">
+	<div class="main_page">
+		<div class="main_page_file">
+			<!--头部 start-->
+			<div id="main_files" class="menu">
+				<ul>
+					<li style="color: rgb(0, 0, 0);"><a href="javascript:void(0)">系统维护</a>
+	<ul>
+		<li class="undefined"><a class="tit_qianyi">数据迁移工具</a></li>
+		<li class="undefined"><a class="tit_beife">执行数据备份</a></li>
+		<li class="undefined"><a class="tit_notr">数据恢复</a></li>
+		<li class="undefined"><a class="tit_notr">用户权限设置</a></li>
+	</ul>
+</li>
+					<li style="color: rgb(0, 0, 0);"><a>帮助</a> 
+						<ul> 
+							<li class="undefined tit_bs_0"><a>在线支持</a></li> 
+							<li class="undefined tit_bs_0"><a>帮助</a></li> 
+							<li class="undefined tit_bs_0"><a>关于</a></li> 
+						</ul> 
+					</li> 
+				</ul>
+			</div>
+			<!--end 头部-->
+		</div>
+		<div class="main_power_btn">
+			<dl id="main_function" class="main_power_deputy_btn">
+							    				<dt id="setting" lang="set">
+    					<span class="main_system_set_rgb"></span>系统设置
+    				</dt>
+				    				<dt id="invoice" lang="invoice">
+    					<span class="main_system_invoice_rgb"></span>发票管理
+    				</dt>
+				    				<dt id="tax" lang="tax">
+    					<span class="main_system_tax_rgb"></span>报税处理
+    				</dt>
+				    				<dt id="maint" style="color: #858a90;" lang="maintenance">
+    					<span class="main_system_maintenance_gray"></span>系统维护
+    				</dt>
+							</dl>
+		</div>
+		<script type="text/javascript"> 
+function opengmfp() {
+	alert("请选择发票管理后再点击此按钮。");
+}
+</script>
+<div style="display: block;" class="main_content" id="main_content">
+	<div class="main_power">
+		<a title="旧版升级数据迁移工具" style="left: 332px; top: 154px;" class="a1"> </a>
+		<a title="数据备份" style="left: 570px; top: 154px;" class="a2"> </a>
+		<img src="/assets/maintenance.png" border="0">
+		<!-- 数据迁移 start -->
+		<div class="a1_none">
+			<img src="/assets/wh_01.png" class="a1_bg1">
+			<i>
+				<img src="/assets/panel_tools.png" class="a1_close">
+			</i>
+			<div class="a1_bot">
+				<span class="a1_left">迁移</span>
+				<span class="a1_right">取消</span>
+			</div>
+		</div>
+		<!-- end 数据迁移 -->
+		<!-- 数据备份 start -->
+		<div class="a2_none">
+			<img src="/assets/wh_02.png" class="a1_bg1">
+			<p>x</p>
+			<span>确定</span>
+		</div>
+		<!-- end 数据备份 -->
+		<!-- 头部非实训 start -->
+		<div class="Notraining">
+			<img src="/assets/fpzl.png">
+			<p>x</p>
+			<span>确定</span>
+		</div>
+		<!-- end 头部非实训 -->
+	</div>
+</div>
+		<a class="main_close"></a>
+		<a class="operate_close"></a>
+		<input id="paytaxId" value="110105539548703 " type="hidden">
+    	<!-- 信息提示——弹窗 start -->
+    	<div class="alert_info">
+    		<img src="/assets/fp_msg.png">
+    		<p onclick="javascript:$(&#39;.alert_info&#39;).hide();">x</p>
+    		<span class="content"></span>
+    		<a onclick="javascript:$(&#39;.alert_info&#39;).hide();">确定</a>
+    	</div>
+    	<!-- end 信息提示——弹窗 -->
+	</div>
+	<!-- 右侧 start -->
+	<!-- 
+    <div class="business">
+         <a><span>&gt;</span><p>实操助手</p></a>
+    </div>
+	-->
+    <!-- end 右侧 -->
+    <!-- side start -->
+            <!-- end side -->
+	<!-- 右侧 start -->
+<script type="text/javascript" src="/assets/page.js"></script>
+<div class="business" style="position: absolute; margin: 0px;">
+      <p>实操助手</p><span class="lower"></span>
+</div>
+<!-- end 右侧 -->
+<!-- zhuai start -->
+	 <!-- side start -->
+	 <div class="dong side" style="position: absolute; margin: 0px; z-index: 99999;">
+	       <!-- side_tit start -->
+	 	   <div class="side_tit">
+		 	   <h3>实操助手</h3>
+	     	   <span class="upper"></span>
+	 	   </div>
+	 	   <!-- end side_tit -->
+
+	 	   <!-- herex start -->
+	 	   <div class="herex">
+	 	   	     <div class="herex_box side_box">
+
+	 	   	     	   <!-- current start -->
+	 	   	     	   <div class="current">
+	 	   	     	   	      <div class="curr_co">
+    <div class="curr_info">
+    	  <h3>1、经济业务摘要</h3>
+    </div>
+
+    <div class="curre_tit">
+    	  <i></i>
+    	  <span>业务说明：</span>
+    	  <input type="hidden" id="questionId" value="193">
+    </div>
+		
+		
+	    <!-- ziliao start -->
+    <div class="ziliao">
+    	  <p>2019年2月8日持金税盘和发票购买簿去税务局购买增值税普通发票20份（发票代码3102103620，发票号码0029886~0029905）<input class="gmfp_buttom" type="button" value="去税务局" onclick="opengmfp();"></p>
+    </div>
+    <!-- end ziliao -->
+	
+	        	    </div>	 	   	     	   </div>
+	 	   	     	   <!-- end current -->
+
+	 	   	     	   <!-- whole start -->
+	 	   	     	   <div class="whole">
+	 	   	     	   	      <div class="whole_co">
+	 	   	     	   	           <div class="whole_title">
+	 	   	     	   	           	    <h3>2、任务列表</h3>
+	 	   	     	   	           </div>
+
+	 	   	     	   	           <!-- whole_ul start -->
+	 	   	     	   	           <div class="whole_ul">
+	 	   	     	   	           	     <ul>
+																							                                					                                																<li id="001001001001">  
+	 	   	     	   	           	     	          <!-- whole_left start -->
+	 	   	     	   	           	     	    	  <div class="whole_left">
+	 	   	     	   	           	     	    	  	   <i></i>
+	 	   	     	   	           	     	    	  	    
+																															<span title="系统安装启动（金税盘）">
+    																1、系统安装启动（金税盘）
+																</span>
+                                        						 	   	     	   	           	     	    	  </div>
+	 	   	     	   	           	     	    	  <!-- end whole_left -->
+
+	 	   	     	   	           	     	    	  <!-- whole_right start -->
+	 	   	     	   	           	     	    	  <div class="whole_right">
+	 	   	     	   	           	     	    	  	                                            						<a class="whole_state whole_r_color">已结束</a>
+                                        						 	   	     	   	           	     	    	  </div>
+	 	   	     	   	           	     	    	  <!-- end whole_right -->
+	 	   	     	   	           	     	    </li>
+																							                                					                                																<li id="001001001002">  
+	 	   	     	   	           	     	          <!-- whole_left start -->
+	 	   	     	   	           	     	    	  <div class="whole_left">
+	 	   	     	   	           	     	    	  	   <i></i>
+	 	   	     	   	           	     	    	  	    
+																															<span title="系统初始化（金税盘）">
+    																2、系统初始化（金税盘）
+																</span>
+                                        						 	   	     	   	           	     	    	  </div>
+	 	   	     	   	           	     	    	  <!-- end whole_left -->
+
+	 	   	     	   	           	     	    	  <!-- whole_right start -->
+	 	   	     	   	           	     	    	  <div class="whole_right">
+	 	   	     	   	           	     	    	  	                                            						<a class="whole_state whole_r_color">已结束</a>
+                                        						 	   	     	   	           	     	    	  </div>
+	 	   	     	   	           	     	    	  <!-- end whole_right -->
+	 	   	     	   	           	     	    </li>
+																							                                					                                					                                																<li id="001001001004">  
+	 	   	     	   	           	     	          <!-- whole_left start -->
+	 	   	     	   	           	     	    	  <div class="whole_left">
+	 	   	     	   	           	     	    	  	   <i></i>
+	 	   	     	   	           	     	    	  	    
+																															<span title="购买发票" class="whole_red">
+    																3、购买发票
+																</span>
+                                        						 	   	     	   	           	     	    	  </div>
+	 	   	     	   	           	     	    	  <!-- end whole_left -->
+
+	 	   	     	   	           	     	    	  <!-- whole_right start -->
+	 	   	     	   	           	     	    	  <div class="whole_right">
+	 	   	     	   	           	     	    	  	                                            						<a class="whole_state whole_r_color whole_going whole_r_go">进行中</a>
+                                        						 	   	     	   	           	     	    	  </div>
+	 	   	     	   	           	     	    	  <!-- end whole_right -->
+	 	   	     	   	           	     	    </li>
+																							                                					                                					                                																<li id="001001001005">  
+	 	   	     	   	           	     	          <!-- whole_left start -->
+	 	   	     	   	           	     	    	  <div class="whole_left">
+	 	   	     	   	           	     	    	  	   <i></i>
+	 	   	     	   	           	     	    	  	    
+															                                        						
+                                        						                                            						<a href="http://lab1.ruby.com:8081/course/operate-fwsk_login-001001001.html?csqk=0" style="color:black " title="抄税清卡">
+																<span title="抄税清卡">
+    																4、抄税清卡
+																</span>
+																</a>
+                                        						 	   	     	   	           	     	    	  </div>
+	 	   	     	   	           	     	    	  <!-- end whole_left -->
+
+	 	   	     	   	           	     	    	  <!-- whole_right start -->
+	 	   	     	   	           	     	    	  <div class="whole_right">
+	 	   	     	   	           	     	    	  	    																<a class="whole_state whole_r_color whole_no whole_r_no">未开始</a>
+                                        						 	   	     	   	           	     	    	  </div>
+	 	   	     	   	           	     	    	  <!-- end whole_right -->
+	 	   	     	   	           	     	    </li>
+												 	   	     	   	           	     </ul>
+	 	   	     	   	           </div>
+	 	   	     	   	           <!-- end whole_ul -->
+
+	 	   	     	   	      </div>
+	 	   	     	   </div>
+	 	   	     	   <!-- end whole -->
+
+	 	   	     </div>
+	 	   </div>
+	 	   <!-- end herex -->
+
+	 
+
+
+
+<script type="text/javascript">
+$(function(){
+	  //外部(实操助手)--拖拽
+	jQuery(".business").Tdrag();
+
+	  //外部--实操助手
+	jQuery(".lower").click(function(){
+	  	  $(".side").show(300);
+	  	  $(".business").hide(300);
+	  });
+
+	  //内部--关闭
+	jQuery(".upper").click(function(){
+		jQuery(".side").hide();
+		jQuery(".business").show();
+	  });
+
+	//内部(实操助手)--拖拽
+	jQuery(".side").Tdrag({
+//	    scope:".zhuai",
+	    handle:".side_tit",
+	    axis:"x"
+	});
+
+
+
+
+});
+
+</script></div>
+	 <!-- end side -->
+<!-- end zhuai -->
+
+<div style="position: absolute; top: -1970px; left: -1970px;"><iframe style="width: 186px; height: 198px;" src="/assets/My97DatePicker.html" frameborder="0" border="0" scrolling="no"></iframe></div></body></html>

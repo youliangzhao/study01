@@ -1,0 +1,194 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	border: 0;
+}
+
+
+/*头部图标 start*/
+.main_system_set_gray {
+	background-position: 0 0;
+}
+
+.main_system_btn_selected {
+	color: #000;
+}
+
+.main_system_maintenance_rgb {
+	background-position: -214px -36px;
+}
+
+.ma_colorx {
+	color: #858a90;
+}
+
+/*end 头部图标*/
+
+/*头部非实训 start*/
+.Notraining{
+	width: 376px;
+	height: 169px;
+	background-color: #fff;
+	position: absolute;
+	top: 140px;
+	left: 288px;
+	z-index: 10;
+	display: none;
+}
+.Notraining p{
+	width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    font-size: 20px;
+    color: #000;
+    line-height: 13px;
+    text-align: center;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+.Notraining p:hover{
+	color: #fff;
+}
+.Notraining span{
+	display: block;
+    width: 56px;
+    height: 26px;
+    background-color: #299dda;
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*end 头部非实训*/
+
+
+
+.main_power {
+	position: relative;
+}
+  /*数据迁移 start*/
+.a1_none {
+	width: 600px;
+	height: 470px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -280px;
+	margin-top: -235px;
+	display: none;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.a1_none img.a1_bg1 {
+	display: block;
+}
+
+.a1_none i {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	overflow: hidden;
+}
+
+.a1_none i .a1_close {
+	display: block;
+	margin: 0 0 0 -16px;
+	cursor: pointer;
+}
+
+.a1_none .a1_bot {
+	width: 200px;
+	height: 35px;
+	position: absolute;
+	bottom: 11px;
+	right: 15px;
+}
+
+.a1_none .a1_bot span {
+	display: block;
+	width: 95px;
+	height: 35px;
+	background-color: #4BA9E8;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 35px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.a1_none .a1_bot .a1_left {
+	float: left;
+}
+
+.a1_none .a1_bot .a1_right {
+	float: right;
+}
+/*end 数据迁移*/
+
+/*数据备份 start*/
+.a2_none {
+	width: 326px;
+	height: 166px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -144px;
+	margin-left: -166px;
+	background-color: #fff;
+	z-index: 10;
+	display: none;
+	overflow: hidden;
+}
+
+.a2_none p {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 7px;
+	right: 8px;
+	font-size: 20px;
+	color: #000;
+	line-height: 13px;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+
+.a2_none p:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.a2_none span {
+	display: block;
+	width: 56px;
+	height: 26px;
+	background-color: #299dda;
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	line-height: 26px;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+/*end 数据备份*/
+
+

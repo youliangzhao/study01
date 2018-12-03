@@ -29,7 +29,7 @@ ul,li {
 	width:1000px;
 	height:720px;
 	margin:0 auto;
-	background:url(../images/main_page.png);
+	background:url(/assets/main_page.png);
 	position:relative;
 }
 .main_page_file {
@@ -66,7 +66,7 @@ ul,li {
 	text-align:center;
 }
 .main_system_set_rgb,.main_system_invoice_rgb,.main_system_tax_rgb,.main_system_remotesendacopy_rgb,.main_system_maintenance_rgb,.main_system_set_gray,.main_system_invoice_gray,.main_system_tax_gray,.main_system_remotesendacopy_gray,.main_system_maintenance_gray {
-	background:url(../images/power_btn.gif) no-repeat;
+	background:url(/assets/power_btn.gif) no-repeat;
 	width:32px;
 	height:31px;
 	display:block;
