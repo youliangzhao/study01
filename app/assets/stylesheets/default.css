@@ -439,7 +439,7 @@
 	display: block;
 }
 .ke-toolbar-icon-url {
-	background-image: url(default.png);
+	background-image: url(/assets/default.png);
 }
 .ke-toolbar .ke-outline {
 	border: 1px solid #F0F0EE;

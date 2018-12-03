@@ -20,7 +20,7 @@ class Lab1Controller < ApplicationController
 
   protected
     def authorized
-      unless User.find_by(id: session[:user_id],status: 0)
+      unless User.find_by(id: session[:user_id],status: 1)
         redirect_to login_url, notice: "请登录系统"
       end
     end

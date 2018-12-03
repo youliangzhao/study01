@@ -12,12 +12,12 @@ class SessionsController < ApplicationController
         redirect_to lab1_index_url
       end
     else
-      redirect_to login_url, alert: "用户名或密码不正确"
+      redirect_to login_url, alert: "bad pass"
     end
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to login_url, notice: "成功退出系统"
+    redirect_to login_url, notice: "logout"
   end
 end
