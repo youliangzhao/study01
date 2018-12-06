@@ -9,13 +9,16 @@ Rails.application.routes.draw do
   root 'sessions#new'
   
   get 'admin/index'
+  get 'admin/showUserLogs'
 
   controller :sessions do
     get 'login' => :new
     post 'login' => :create
-    delete 'logout' => :destroy
+    get 'logout' => :destroy
   end
 
   resources :users
+  
+  mount ActionCable.server => '/cable'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

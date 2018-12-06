@@ -5,10 +5,10 @@
   <link href="/assets/default.css" rel="stylesheet" id="lhgdialoglink">
   <link rel="stylesheet" type="text/css" href="/assets/main_page.css">
   <link rel="stylesheet" type="text/css" href="/assets/desk.css">
-
-  <script type="text/javascript" src="/assets/jquery-1.12.3.min.js"></script>
   <link rel="stylesheet" href="/assets/iblue.css">
   <link rel="stylesheet" type="text/css" href="/assets/Draging.css">
+
+  <script type="text/javascript" src="/assets/jquery-1.12.3.min.js"></script>
   <script type="text/javascript" src="/assets/lhgdialog.min.js"></script>
   <script type="text/javascript" src="/assets/lhgdialog-notice.js"></script>
   <script type="text/javascript" src="/assets/Tdrag.js"></script>
@@ -97,7 +97,8 @@
   </style>
 </head>
 <body>
-  <div class="" style="left: 0px; top: 0px; visibility: hidden; position: absolute;"><table class="ui_border"><tbody><tr><td class="ui_lt"></td><td class="ui_t"></td><td class="ui_rt"></td></tr><tr><td class="ui_l"></td><td class="ui_c"><div class="ui_inner"><table class="ui_dialog"><tbody><tr><td colspan="2"><div class="ui_title_bar"><div class="ui_title" unselectable="on" style="cursor: move;"></div><div class="ui_title_buttons"><a class="ui_min" href="javascript:void(0);" title="最小化" style="display: inline-block;"><b class="ui_min_b"></b></a><a class="ui_max" href="javascript:void(0);" title="最大化" style="display: inline-block;"><b class="ui_max_b"></b></a><a class="ui_res" href="javascript:void(0);" title="还原"><b class="ui_res_b"></b><b class="ui_res_t"></b></a><a class="ui_close" href="javascript:void(0);" title="关闭(esc键)" style="display: inline-block;">×</a></div></div></td></tr><tr><td class="ui_icon" style="display: none;"></td><td class="ui_main" style="width: auto; height: auto;"><div class="ui_content" style="padding: 10px;"></div></td></tr><tr><td colspan="2"><div class="ui_buttons" style="display: none;"></div></td></tr></tbody></table></div></td><td class="ui_r"></td></tr><tr><td class="ui_lb"></td><td class="ui_b"></td><td class="ui_rb" style="cursor: se-resize;"></td></tr></tbody></table></div><div class="opacity">
+  <div class="" style="left: 0px; top: 0px; visibility: hidden; position: absolute;"><table class="ui_border"><tbody><tr><td class="ui_lt"></td><td class="ui_t"></td><td class="ui_rt"></td></tr><tr><td class="ui_l"></td><td class="ui_c"><div class="ui_inner"><table class="ui_dialog"><tbody><tr><td colspan="2"><div class="ui_title_bar"><div class="ui_title" unselectable="on" style="cursor: move;"></div><div class="ui_title_buttons"><a class="ui_min" href="javascript:void(0);" title="最小化" style="display: inline-block;"><b class="ui_min_b"></b></a><a class="ui_max" href="javascript:void(0);" title="最大化" style="display: inline-block;"><b class="ui_max_b"></b></a><a class="ui_res" href="javascript:void(0);" title="还原"><b class="ui_res_b"></b><b class="ui_res_t"></b></a><a class="ui_close" href="javascript:void(0);" title="关闭(esc键)" style="display: inline-block;">×</a></div></div></td></tr><tr><td class="ui_icon" style="display: none;"></td><td class="ui_main" style="width: auto; height: auto;"><div class="ui_content" style="padding: 10px;"></div></td></tr><tr><td colspan="2"><div class="ui_buttons" style="display: none;"></div></td></tr></tbody></table></div></td><td class="ui_r"></td></tr><tr><td class="ui_lb"></td><td class="ui_b"></td><td class="ui_rb" style="cursor: se-resize;"></td></tr></tbody></table></div>
+  <div class="opacity">
 </div>
 
   <!-- 用户使用浏览器不正确 start -->
@@ -166,7 +167,7 @@
   </script><!--浏览器兼容提示框end-->
   <!--挤掉账号的websocket start-->
   <script type="text/javascript">
-      var userName = "2850653086";
+      var userName = 123456;
       var websocket=null;
       $(function () {
           if (userName != null && userName != '') {
@@ -177,7 +178,7 @@
       function webSocketMsg() {
           // 判断当前浏览器是否支持WebSocket
           if ('WebSocket' in window) {
-              websocket = new WebSocket("ws://" + window.location.host + "/hostWebSocket?"+userName );
+              websocket = new WebSocket("ws://" + window.location.host + "/cable?"+userName );
           } else {
               alert('当前浏览器 Not support websocket');
           }

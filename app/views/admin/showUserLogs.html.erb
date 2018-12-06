@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>用户登录历史记录</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>用户名</th>
+      <th>口令</th>
+      <th>IP地址</th>
+      <th>登录时间</th>
+      <th>失败次数</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @userlog.each do |ulog| %>
+      <tr>
+        <td><%= ulog.name %></td>
+        <td><%= ulog.password %></td>
+        <td><%= ulog.ip %></td>
+        <td><%= ulog.logtime %></td>
+        <td><%= ulog.errcnt %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
