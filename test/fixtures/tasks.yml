@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  taskcode: 1
+  taskname: MyString
+  taskdesc: MyString
+  temp_id: 
+
+two:
+  taskcode: 1
+  taskname: MyString
+  taskdesc: MyString
+  temp_id: 

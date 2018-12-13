@@ -1,0 +1,115 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div class="side_tit">
+    <h3>实操助手</h3>
+    <span class="upper"></span>
+</div>
+<!-- end side_tit -->
+
+<!-- herex start -->
+<div class="herex">
+    <div class="herex_box side_box">
+
+        <!-- current start -->
+        <div class="current">
+            <div class="curr_co">
+                <div class="curr_info">
+                    <h3>1、经济业务摘要</h3>
+                </div>
+
+                <div class="curre_tit">
+                    <i></i>
+                    <span>业务说明：</span>
+                    <input type="hidden" id="questionId" value="">
+                </div>
+
+
+                <!-- ziliao start -->
+                <div class="ziliao">
+                    <p></p>
+                </div>
+                <!-- end ziliao -->
+
+                <!-- <div class="curre_tit">
+                <i></i>
+                <span>背景单据：</span>
+            </div> -->
+            </div>
+        </div>
+        <!-- end current -->
+
+        <!-- whole start -->
+        <div class="whole">
+            <div class="whole_co">
+                <div class="whole_title">
+                    <h3>2、任务列表</h3>
+                </div>
+
+                <!-- whole_ul start -->
+                <div class="whole_ul">
+                    <ul>
+                    <% @task.each do |t| %>
+                        <li id="<%= t.taskcode %>">
+                            <!-- whole_left start -->
+                            <div class="whole_left">
+                                <i></i>
+
+                                <span title="<%= t.taskname %>">
+    																<%= t.taskcode %>、<%= t.taskname %>
+																</span>
+                            </div>
+                            <!-- end whole_left -->
+
+                            <!-- whole_right start -->
+                            <div class="whole_right">
+                                <a class="whole_state whole_r_color whole_no whole_r_no">未开始</a>
+                            </div>
+                            <!-- end whole_right -->
+                        </li>
+                    <% end %>
+                    </ul>
+                </div>
+                <!-- end whole_ul -->
+
+            </div>
+        </div>
+        <!-- end whole -->
+
+    </div>
+</div>
+<!-- end herex -->
+
+
+<script type="text/javascript">
+    $(function () {
+        //外部(实操助手)--拖拽
+        jQuery(".business").Tdrag();
+
+        //外部--实操助手
+        jQuery(".lower").click(function () {
+            $(".side").show(300);
+            $(".business").hide(300);
+        });
+
+        //内部--关闭
+        jQuery(".upper").click(function () {
+            jQuery(".side").hide();
+            jQuery(".business").show();
+        });
+
+        //内部(实操助手)--拖拽
+        jQuery(".side").Tdrag({
+//	    scope:".zhuai",
+            handle: ".side_tit",
+            axis: "x"
+        });
+
+
+    });
+
+</script>
+</body>
+</html>

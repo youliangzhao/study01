@@ -1,0 +1,17 @@
+
+<table>
+  <% @user_tasks.each do |ut| %>
+  <tr>
+	  <td><%= ut.id %></td>
+    <td><%= User.where(id: ut.user_id).first.name %></td>
+
+    <td><%= Temp.where(id: ut.temp_id).first.name %></td>
+    <td><%= Temp.where(id: ut.temp_id).first.desc %></td>
+
+	  <td><%= ut.taskcode %></td>
+	  <td><%= Task.where(id: ut.task_id).first.taskname %></td>
+
+	  <td><%= ut.taskscore %></td>
+  </tr>
+  <% end %>
+</table>

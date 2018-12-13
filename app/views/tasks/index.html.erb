@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1>Tasks</h1><br><br>
+    <% @temps.each do |t| %>
+  <table>
+    <thead>
+    <tr>
+      <th>模板id</th>
+      <th>模板名称</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+
+      <tr>
+        <td><%= t.id %></td>
+        <td><%= t.name %></td>
+        <td><%= t.desc %></td>
+      </tr>
+  </table>
+
+<table style="border: 1px solid blue;">
+  <thead>
+    <tr>
+      <th>任务编码</th>
+      <th>任务名称</th>
+      <th>任务描述</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+
+    <% @tasks.where(temp_id: t.id).order(taskcode: :asc).each do |task| %>
+      <tr>
+        <td><%= task.taskcode %></td>
+        <td><%= task.taskname %></td>
+        <td><%= task.taskdesc %></td>
+        <td><%= link_to '修改', edit_task_path(task) %></td>
+        <td><%= link_to '删除', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+---------------------------
+    <% end %>
+<br>
+
+<%= link_to '新建任务', new_task_path %>

@@ -101,73 +101,12 @@
   <div class="opacity">
 </div>
 
-  <!-- 用户使用浏览器不正确 start -->
-  <div id="norightbro">
-    <div class="mod_tit">
-      <span>温馨提示</span>
-    </div>
+  <!-- check the browser type -->
+  <%= render "shared/chk_browser" %>
 
-    <div class="mod_con" style="color:red">
-      <p>税务操作实验室系统，仅支持谷歌或火狐浏览器，如果做题过程中出现问题，请换成火狐或者谷歌浏览器！</p>
-    </div>
-    <div class="mod_fo">
-      <div class="mod_fo_con">
-        <button type="button" class="mod_confirm" id="norightbrosure">确定</button>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript">
-      ;$(function(){
-          $("#norightbrosure").bind("click",function(){//浏览器兼容温馨提示确定按钮
-              hideBro();
-          });
-          bro();
-      });
-
-      function bro(){
-          var broName = '';
-          var is360 = _mime("type", "application/vnd.chromium.remoting-viewer");//application/vnd.chromium.remoting-viewer可能为360特有
-          if (isChrome() && is360) {
-              broName="360浏览器";
-          }else{
-              if(window.navigator.userAgent.indexOf('MSIE')!=-1&&window.navigator.appName.indexOf("Microsoft") != -1){
-                  broName = 'IE';
-              }
-              if(window.navigator.userAgent.indexOf('Firefox')!=-1){
-                  broName = 'Firefox';
-              }
-              if(window.navigator.userAgent.indexOf('Chrome')!=-1){
-                  broName = 'Chrome';
-              }
-          }
-          if(broName!="Chrome" && broName!="Firefox"){
-              $(".opacity").show();
-              $("#norightbro").show();
-          }
-      }
-      function hideBro(){
-          $("#norightbro").hide();
-          $(".opacity").hide();
-      }
-      //检测是否是谷歌内核(可排除360及谷歌以外的浏览器)
-      function isChrome(){
-          var ua = navigator.userAgent.toLowerCase();
-          return ua.indexOf("chrome") > 1;
-      }
-      //测试mime
-      function _mime(option, value) {
-          var mimeTypes = navigator.mimeTypes;
-          for (var mt in mimeTypes) {
-              if (mimeTypes[mt][option] == value) {
-                  return true;
-              }
-          }
-          return false;
-      }
-  </script><!--浏览器兼容提示框end-->
   <!--挤掉账号的websocket start-->
   <script type="text/javascript">
-      var userName = 123456;
+      var userName = "<%= session["user_name"]%>";
       var websocket=null;
       $(function () {
           if (userName != null && userName != '') {
@@ -231,7 +170,7 @@
   <script type="text/javascript">
       $(function(){
           jQuery.ajax({
-              url:'http://lab1.ruby.com:8081/course/list-001001001.html',
+              url:'/lab1/tasklist',
               success:function(data){
                   $(".side").append(data);
                   //判断如果“未开始”项存是否存在，存在则点击第一个“未开始”项，不存在则点击“进行中”项

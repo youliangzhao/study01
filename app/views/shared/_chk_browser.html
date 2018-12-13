@@ -1,0 +1,64 @@
+  <!-- 用户使用浏览器不正确 start -->
+  <div id="norightbro">
+    <div class="mod_tit">
+      <span>温馨提示</span>
+    </div>
+
+    <div class="mod_con" style="color:red">
+      <p>税务操作实验室系统，仅支持谷歌或火狐浏览器，如果做题过程中出现问题，请换成火狐或者谷歌浏览器！</p>
+    </div>
+    <div class="mod_fo">
+      <div class="mod_fo_con">
+        <button type="button" class="mod_confirm" id="norightbrosure">确定</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+      ;$(function(){
+          $("#norightbrosure").bind("click",function(){//浏览器兼容温馨提示确定按钮
+              hideBro();
+          });
+          bro();
+      });
+
+      function bro(){
+          var broName = '';
+          var is360 = _mime("type", "application/vnd.chromium.remoting-viewer");//application/vnd.chromium.remoting-viewer可能为360特有
+          if (isChrome() && is360) {
+              broName="360浏览器";
+          }else{
+              if(window.navigator.userAgent.indexOf('MSIE')!=-1&&window.navigator.appName.indexOf("Microsoft") != -1){
+                  broName = 'IE';
+              }
+              if(window.navigator.userAgent.indexOf('Firefox')!=-1){
+                  broName = 'Firefox';
+              }
+              if(window.navigator.userAgent.indexOf('Chrome')!=-1){
+                  broName = 'Chrome';
+              }
+          }
+          if(broName!="Chrome" && broName!="Firefox"){
+              $(".opacity").show();
+              $("#norightbro").show();
+          }
+      }
+      function hideBro(){
+          $("#norightbro").hide();
+          $(".opacity").hide();
+      }
+      //检测是否是谷歌内核(可排除360及谷歌以外的浏览器)
+      function isChrome(){
+          var ua = navigator.userAgent.toLowerCase();
+          return ua.indexOf("chrome") > 1;
+      }
+      //测试mime
+      function _mime(option, value) {
+          var mimeTypes = navigator.mimeTypes;
+          for (var mt in mimeTypes) {
+              if (mimeTypes[mt][option] == value) {
+                  return true;
+              }
+          }
+          return false;
+      }
+  </script><!--浏览器兼容提示框end-->

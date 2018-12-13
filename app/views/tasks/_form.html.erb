@@ -1,0 +1,53 @@
+<%= form_with(model: task, local: true) do |form| %>
+  <% if task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% task.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div>
+    <select name="task[template_id]" id="template_id">
+      <option value=1 
+        <% if @task.template_id == 1 %>
+        <%= 'selected' %> 
+        <% end %>
+      >武汉梦园商贸有限公司(小规模纳税人2月份筹建期)
+      </option>
+
+      <option value=2
+        <% if @task.template_id == 2 %>
+        <%= 'selected' %> 
+        <% end %>
+         
+      >武汉梦园商贸有限公司(小规模纳税人3月份正式运营期)
+      </option>
+    </select>
+  </div>
+
+  <div class="field">
+    <%= form.label :taskcode %>
+    <%= form.number_field :taskcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :taskname %>
+    <%= form.text_field :taskname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :taskdesc %>
+    <%= form.text_area(:taskdesc, size: "64x10") %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

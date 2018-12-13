@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_04_103729) do
+ActiveRecord::Schema.define(version: 2018_12_13_092102) do
+
+  create_table "tasks", force: :cascade do |t|
+    t.integer "taskcode"
+    t.string "taskname"
+    t.string "taskdesc"
+    t.integer "temp_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["temp_id"], name: "index_tasks_on_temp_id"
+  end
+
+  create_table "temps", force: :cascade do |t|
+    t.string "name"
+    t.string "desc"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "user_logs", force: :cascade do |t|
     t.string "name"
@@ -20,6 +37,17 @@ ActiveRecord::Schema.define(version: 2018_12_04_103729) do
     t.decimal "errcnt"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "user_tasks", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "task_id"
+    t.datetime "tasktime", default: "2018-12-13 00:50:59"
+    t.integer "taskscore"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "temp_id"
+    t.integer "taskcode"
   end
 
   create_table "users", force: :cascade do |t|
